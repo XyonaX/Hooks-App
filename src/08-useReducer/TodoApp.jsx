@@ -7,6 +7,8 @@ export const TodoApp = () => {
 
     const {
         todos,
+        todosCount,
+        pendingTodos,
         handleDeleteTodo,
         handleNewTodo,
         handleToggleTodo
@@ -16,7 +18,7 @@ export const TodoApp = () => {
     return (
 
     <>
-        <h1>TodoApp (10) <small>pendientes: 2</small></h1>
+        <h1>TodoApp {todosCount} <small>pendientes: {pendingTodos}</small></h1>
 
         <hr />
 
